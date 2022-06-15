@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment Chart Maker</title>
+    <link rel="stylesheet" href="./css/master.css" />
+    <script src="./js/script.js"></script>
+    <script src="./js/html2canvas.js"></script>
+  </head>
+  <body>
+    <input id="0" type="file" onchange="readURL(this, 'lawfulGood');" />
+    <input id="1" type="file" onchange="readURL(this, 'neutralGood');" />
+    <input id="2" type="file" onchange="readURL(this, 'chaoticGood');" />
+    <input id="3" type="file" onchange="readURL(this, 'lawfulNeutral');" />
+    <input id="4" type="file" onchange="readURL(this, 'trueNeutral');" />
+    <input id="5" type="file" onchange="readURL(this, 'chaoticNeutral');" />
+    <input id="6" type="file" onchange="readURL(this, 'lawfulEvil');" />
+    <input id="7" type="file" onchange="readURL(this, 'neutralEvil');" />
+    <input id="8" type="file" onchange="readURL(this, 'chaoticEvil');" />
+
+    <div id="footer">
+      <img
+        id="download"
+        src="./assets/download.svg"
+        alt="download"
+        onclick="saveImage();"
+      />
+    </div>
+
+    <div id="chart">
+      <div id="lawfulGood" onclick="openFile('0');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Lawful Good</span>
+      </div>
+      <div id="neutralGood" onclick="openFile('1');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Neutral Good</span>
+      </div>
+      <div id="chaoticGood" onclick="openFile('2');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Chaotic Good</span>
+      </div>
+
+      <br />
+
+      <div id="lawfulNeutral" onclick="openFile('3');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Lawful Neutral</span>
+      </div>
+      <div id="trueNeutral" onclick="openFile('4');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>True Neutral</span>
+      </div>
+      <div id="chaoticNeutral" onclick="openFile('5');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Chaotic Neutral</span>
+      </div>
+
+      <br />
+
+      <div id="lawfulEvil" onclick="openFile('6');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Lawful Evil</span>
+      </div>
+      <div id="neutralEvil" onclick="openFile('7');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Neutral Evil</span>
+      </div>
+      <div id="chaoticEvil" onclick="openFile('8');">
+        <img src="./assets/blank.png" alt="Lawful Good" />
+        <span>Chaotic Evil</span>
+      </div>
+    </div>
+  </body>
+</html>

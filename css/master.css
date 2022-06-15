@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+#chart {
+  line-height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 24px;
+}
+
+#chart div span {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+#chart div {
+  width: 250px;
+  height: 250px;
+  display: table-cell;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+#chart div img {
+  width: 230px;
+  height: 190px;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 10px;
+  vertical-align: middle;
+  border-radius: 5px;
+
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#chart div img:hover {
+  filter: brightness(1.1);
+}
+
+#footer {
+  width: 750px;
+  height: 66px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+#download {
+  margin-top: 2px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+#download:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+#download:active {
+  background-color: rgb(80, 80, 80);
+}
+
+input {
+  display: none;
+}
+
+canvas {
+  display: none;
+}
